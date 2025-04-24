@@ -71,8 +71,11 @@ nav {
 	 right: 0;
 }
 
-.main-home {
+main {
 	color: white;
+}
+
+.main-home {
 	display: flex;
 	justify-content: space-between;
 }
