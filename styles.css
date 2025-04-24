@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-image: url(./assets/174905-cinque_terre_national_park-manarola-vernazza-national_park-arches_national_park-1920x1080.jpg);
+	background-repeat: none;
+	background-position: center center;
+	background-size: cover;
+}
+
+nav {
+	padding: 1rem;
+	background-color: #7C4585;
+}
+
+#logo {
+	color: #F8B55F;
+}
+
+.nav-inter {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links>a {
+	text-decoration: none;
+	color: white;
+	padding: 0.7rem 1rem;
+	margin-right: 2rem;
+}
+
+.links>a:hover {
+	background-color: white;
+	color: #7C4585;
+	border-radius: 50%;
+}
+
+.search {
+	position: relative;
+	height: 2rem;
+	width: 40%;	
+}
+
+.search>input {
+	position: absolute;
+	width: 59%;
+	height: 2rem;
+	font-size: 1rem;
+	color: #C95792;
+	right: 108;
+}
+
+.search>button {
+	position: absolute;
+	height: 100%;
+	padding: 0px 0.5rem;
+	background-color: #F8B55F;
+	color: #3D365C;	
+	cursor: pointer;
+}
+
+.search>button:nth-of-type(1) { 
+	 right: 3rem;
+}
+
+.search>button:nth-of-type(2) { 
+	 right: 0;
+}
+
+.main-home {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.intro {
+	background-color: rgba(61, 54, 92, 0.7);
+	width: 40%;
+	height: 18rem;
+	text-align: center;
+	margin-top: 10rem;
+	margin-left: 1rem;
+	padding: 2rem;
+}
+
+.results {
+	margin-top: 1rem;
+	background-color: rgba(61, 54, 92, 0.7);
+	width: 40%;
+	height: 80vh;
+	margin-right: 1rem;
+	overflow-y: scroll;
+}
+
+.res {
+	height: 20rem;
+}
+
+.res>h3 {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.res>p {
+	margin-left: 1rem;
+}
+
+.res>div {
+	height: 60%;
+	background-color: lightgray;
+	margin-bottom: 1rem;
+}
+
+.about-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.remove {
+	display: none;
+}
+
+.about {
+	margin-top: 3rem;
+	background-color: rgba(61, 54, 92, 0.7);
+	width: 80%;
+	text-align: center;
+	padding: 2rem;
+}
+
+.team {
+	display: flex;
+}
+
+.member {
+	background-color: rgba(61, 54, 92, 0.7);
+	text-align: center;
+	border-radius: 3rem;
+	padding: 1rem;
+	margin: 0rem 1rem;
+}
+
+.role {
+	margin-top: 1rem;
+	background-color: #C95792;
+	display: inline-block;
+	padding: 0.3rem;
+	border-radius: 0.3rem;
+}
+
+.main-contact {
+	background-color: rgba(61, 54, 92, 0.7);
+	margin: 10rem 2rem;
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem 0rem;
+}
+
+.contact {
+	text-align: center;
+}
+
+.main-contact>form {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-contact>form>input, textarea {
+	margin-bottom: 1rem;
+	background-color: rgba(61, 54, 92, 0.7);
+	color: white;
+	width: 16rem;
+}
+
+.main-contact>form>input {
+	font-size: 1rem;
+	height: 2rem;
+}
+
+textarea {
+	font-size: 1rem;
+	height: 5rem;
+}
+
+form>button {
+	padding: 0.5rem;
+	background-color: #F8B55F;
+	color: #3D365C;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #fccd90;
+}
+
+@media (min-width: 1250px) {
+	.search, .intro, .results {
+		width: 30%;
+	}
+
+	.about {
+		width: 60%;
+	}
+	.main-contact>form>input, textarea {
+		width: 25rem;
+	}
+}
+
